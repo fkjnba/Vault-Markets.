@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Start trading with Vault Markets — Trade Forex, Indices & Gold</title>
+  <meta name="description" content="Start trading with Vault Markets today — low spreads, fast withdrawals, easy onboarding, and a welcome bonus. Open an account with our referral link.">
+  <meta name="robots" content="index,follow" />
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --muted:#6b7280;
+      --primary-1:#0b3b66;
+      --primary-2:#06263f;
+      --accent:#f5b33a;     /* Gold */
+      --text:#0f1724;
+      --card:#f8fafc;
+      --heading-dark:#0b1b2b;
+      --radius:12px;
+      --shadow: 0 10px 30px rgba(6,38,63,0.12);
+    }
+
+    *{box-sizing:border-box;}
+
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial;
+      background:var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+    }
+
+    .wrap{
+      max-width:1100px;
+      margin:0 auto;
+      padding:18px;
+    }
+
+    /* Header */
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:10px 0;
+    }
+
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+
+    .logo-img{
+      height:56px;
+      border-radius:8px;
+      object-fit:contain;
+    }
+
+    .subtitle{
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    /* Top Banner */
+    .cover{
+      width:100%;
+      border-radius:var(--radius);
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      margin-bottom:14px;
+    }
+
+    .cover img{
+      width:100%;
+      height:auto;
+      display:block;
+      max-height:360px;
+      object-fit:cover;
+    }
+
+    /* Hero Section */
+    .hero{
+      background:linear-gradient(180deg,var(--primary-1),var(--primary-2));
+      color:#fff;
+      padding:20px;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      margin-bottom:20px;
+    }
+
+    .hero .kicker{
+      font-size:13px;
+      opacity:0.95;
+      margin-bottom:10px;
+    }
+
+    .hero p{
+      font-size:15px;
+      color:rgba(255,255,255,0.95);
+    }
+
+    .badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:14px;
+    }
+
+    .badge{
+      font-size:12px;
+      background:rgba(255,255,255,0.10);
+      padding:6px 10px;
+      border-radius:8px;
+    }
+
+    /* Updated H4 Style (NO MORE OVERLAP) */
+    .section-heading{
+      font-weight:700;
+      font-size:20px;
+      margin:0 0 26px 0;
+      padding:0;
+      position:relative;
+      display:inline-block;
+    }
+
+    .section-heading::after{
+      content:"";
+      display:block;
+      height:8px;
+      width:50px;
+      background:var(--heading-dark);
+      border-radius:4px;
+      margin-top:10px;
+    }
+
+    .section-heading::before{
+      content:"";
+      display:block;
+      height:3px;
+      width:26px;
+      background:var(--accent);
+      border-radius:3px;
+      margin-top:6px;
+    }
+
+    /* Buttons */
+    .btn{
+      padding:12px 14px;
+      border-radius:10px;
+      font-weight:700;
+      text-decoration:none;
+      font-size:15px;
+      display:inline-block;
+    }
+
+    .btn-primary{
+      background:var(--accent);
+      color:#081018;
+    }
+
+    .btn-ghost{
+      border:2px solid rgba(255,255,255,0.2);
+      color:#fff;
+    }
+
+    .cta-row{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-top:14px;
+    }
+
+    /* Cards */
+    .cards{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow:var(--shadow);
+      border:1px solid rgba(6,38,63,0.06);
+    }
+
+    .muted{
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    /* Contact box */
+    .form-card{
+      background:#fff;
+      box-shadow:var(--shadow);
+      border-radius:var(--radius);
+      padding:16px;
+      border:1px solid rgba(0,0,0,0.05);
+    }
+
+    input{
+      padding:10px;
+      border-radius:8px;
+      border:1px solid #e3e3e3;
+      width:100%;
+      font-size:14px;
+    }
+
+    footer{
+      text-align:center;
+      font-size:13px;
+      color:var(--muted);
+      margin:30px 0;
+    }
+
+    @media(min-width:760px){
+      .cards{grid-template-columns:repeat(3,1fr);}
+      .hero h1{font-size:28px;}
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <img class="logo-img" src="https://i.postimg.cc/Kv5S65r0/Vault-Marketslogo.jpg">
+        <div>
+          <div style="font-weight:800;font-size:17px;">Vault Markets</div>
+          <div class="subtitle">Trade Forex, Indices & Gold</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#how" style="margin-right:12px;color:var(--muted);text-decoration:none;">How it works</a>
+        <a href="#faq" style="margin-right:12px;color:var(--muted);text-decoration:none;">FAQ</a>
+        <a href="https://wa.me/27670576610" target="_blank" style="color:var(--muted);text-decoration:none;">Need help?</a>
+      </nav>
+    </header>
+
+    <!-- TOP BANNER -->
+    <div class="cover">
+      <img src="https://i.postimg.cc/T378wYsq/VAULTM-cover.png">
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="kicker">Trusted broker — traders first</div>
+
+      <div class="section-heading" style="font-size:22px;">Start trading with Vault Markets today</div>
+
+      <p>Low spreads, fast withdrawals and easy account setup. Get a welcome bonus when you sign up with our link.</p>
+
+      <div class="badges">
+        <div class="badge">Low spreads</div>
+        <div class="badge">Fast withdrawals</div>
+        <div class="badge">Welcome bonus</div>
+        <div class="badge">Forex • Indices • Metals</div>
+        <div class="badge">Safe & trusted</div>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://vaultmarkets.trade/sign-up/?brd=1&sidc=42EDE2FE-148C-4C79-9ADC-8DF72A8E4110&utm_source=google&utm_medium=cpc&utm_campaign=trader-signup" target="_blank">Open account — Get bonus</a>
+        <a class="btn btn-ghost" href="#contact">How to start</a>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section>
+      <div class="section-heading">Why traders choose Vault Markets</div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="section-heading" style="font-size:16px">Low spreads & liquidity</div>
+          <p class="muted">Tight pricing on all major pairs and indices.</p>
+        </div>
+
+        <div class="card">
+          <div class="section-heading" style="font-size:16px">Fast withdrawals</div>
+          <p class="muted">Local transfer options for quick access to your funds.</p>
+        </div>
+
+        <div class="card">
+          <div class="section-heading" style="font-size:16px">Easy to start</div>
+          <p class="muted">Begin trading in minutes with fast verification.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW TO START -->
+    <section id="how" style="margin-top:30px;">
+      <div class="card">
+        <div class="section-heading" style="font-size:17px;">How to start — 3 simple steps</div>
+        <ol class="muted">
+          <li>Click “Open account” and fill in your details.</li>
+          <li>Verify your identity and fund your trading account.</li>
+          <li>Start trading forex, gold, indices & more.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTACT / WHATSAPP -->
+    <section id="contact" style="margin-top:30px;">
+      <div class="form-card">
+        <div class="section-heading" style="font-size:17px;">Need help? Chat on WhatsApp</div>
+
+        <p class="muted">Tap below and we will assist you with account setup, deposits and withdrawals.</p>
+
+        <a href="https://wa.me/27670576610" target="_blank" class="btn btn-primary" style="margin-top:8px;display:inline-block;width:100%;text-align:center;">
+          Chat on WhatsApp
+        </a>
+
+        <div style="margin-top:14px;font-weight:600;">Or leave your details:</div>
+
+        <form id="contactForm" style="margin-top:10px;display:grid;gap:10px;">
+          <input type="text" name="name" placeholder="Full name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="phone" placeholder="Phone (optional)">
+          <button type="submit" class="btn btn-primary" style="width:100%;">Open account now</button>
+          <div id="formMsg" class="muted"></div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" style="margin-top:30px;">
+      <div class="card">
+        <div class="section-heading" style="font-size:17px;">Frequently asked questions</div>
+
+        <details>
+          <summary>Is it free to open an account?</summary>
+          <p class="muted" style="margin-top:8px;">Yes, account opening is fully free.</p>
+        </details>
+
+        <details>
+          <summary>How fast are withdrawals?</summary>
+          <p class="muted" style="margin-top:8px;">Withdrawals are processed fast. Local bank transfers are quickest.</p>
+        </details>
+
+        <details>
+          <summary>What can I trade?</summary>
+          <p class="muted" style="margin-top:8px;">Forex, indices, metals and CFDs on MT4/MT5.</p>
+        </details>
+
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Vault Markets — Terms & Risk Disclosure
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const signupLink = "https://vaultmarkets.trade/sign-up/?brd=1&sidc=42EDE2FE-148C-4C79-9ADC-8DF72A8E4110&utm_source=google&utm_medium=cpc&utm_campaign=trader-signup";
+
+    document.getElementById("contactForm").addEventListener("submit", function(e){
+      e.preventDefault();
+      const name = e.target.name.value.trim();
+      const email = e.target.email.value.trim();
+
+      if(!name || !email){
+        document.getElementById("formMsg").textContent = "Please enter your name and email.";
+        return;
+      }
+
+      window.open(signupLink, "_blank", "noopener");
+      document.getElementById("formMsg").textContent = "Signup page opened.";
+      e.target.reset();
+    });
+  </script>
+
+</body>
+</html>
